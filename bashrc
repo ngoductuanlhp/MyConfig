@@ -116,8 +116,21 @@ if ! shopt -oq posix; then
   fi
 fi
 
-# Aliases
-alias cpl='g++ -g -o run'
-alias cc='clear'
-source /opt/ros/kinetic/setup.bash
+#Aliases
+alias cpl="g++ -g -o run"
+alias cc="clear"
+alias home="cd ~"
+alias qq="exit"
+alias mypc="nautilus"
+
+#ROS 
+source /opt/ros/melodic/setup.bash
 source ~/catkin_ws/devel/setup.bash
+
+alias catmake="catkin_make"
+alias roshome="roscd ; cd .."
+export ROS_HOSTNAME=localhost
+export ROS_MASTER_URI=http://localhost:11311
+
+#Turtlebot3 setup
+export TURTLEBOT3_MODEL=burger
