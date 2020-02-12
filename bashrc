@@ -123,14 +123,15 @@ alias home="cd ~"
 alias qq="exit"
 alias mypc="nautilus"
 
-#ROS 
-source /opt/ros/melodic/setup.bash
-source ~/catkin_ws/devel/setup.bash
-
 alias catmake="catkin_make"
 alias roshome="roscd ; cd .."
-export ROS_HOSTNAME=localhost
-export ROS_MASTER_URI=http://localhost:11311
 
-#Turtlebot3 setup
-export TURTLEBOT3_MODEL=burger
+alias penv="source ~/venv/bin/activate"
+
+source /opt/ros/melodic/setup.bash
+#source ~/catkin_ws/devel/setup.bash
+source ~/dira_ws/devel/setup.bash
+
+export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
+#export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64\
+#                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
