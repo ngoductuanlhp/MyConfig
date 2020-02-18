@@ -126,8 +126,9 @@ alias mypc="nautilus"
 alias catmake="catkin_make"
 alias roshome="roscd ; cd .."
 
-alias penv="source ~/venv/bin/activate"
-
+alias penv="source ~/venv/bin/activate" # python2 virtual env
+alias p3env="source ~/p3env/bin/activate" # python3 virtual env
+# ROS
 source /opt/ros/melodic/setup.bash
 #source ~/catkin_ws/devel/setup.bash
 source ~/dira_ws/devel/setup.bash
@@ -135,3 +136,7 @@ source ~/dira_ws/devel/setup.bash
 export PATH=/usr/local/cuda-10.0/bin${PATH:+:${PATH}}
 #export LD_LIBRARY_PATH=/usr/local/cuda-10.0/lib64\
 #                         ${LD_LIBRARY_PATH:+:${LD_LIBRARY_PATH}}
+
+# ROS network setup
+#export ROS_MASTER_URI=http://10.127.38.30:11311
+#export ROS_IP=10.127.38.102
